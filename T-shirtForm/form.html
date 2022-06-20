@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T-shirt form</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <h1 id="title">FILL THIS FORM TO GET FREE T-SHIRT</h1>
+    <div id="tshirtFormContainer">
+      <form id="tshirtForm" action="" onsubmit="return validateForm()">
+        <div>
+          <label for="name">Name:</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="mail">Email:</label>
+          <input
+            type="email"
+            id="mail"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="addressContainer">
+          <label id="addtitle" for="address">Address:</label>
+
+          <textarea
+            id="address"
+            name="address"
+            rows="5"
+            cols="20"
+            placeholder="Enter your address"
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="gender">Select your gender:</label>
+          <select name="gender" id="gender" required>
+            <option value="">..Please select your gender..</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <p id="sizeHeading">Enter your T-shirt size:</p>
+        <div class="radioSize">
+          <div class="smRadio">
+            <input type="radio" name="size" id="s" value="S" checked />
+            <label for="s">Small</label>
+
+            <input type="radio" name="size" id="m" value="M" />
+            <label for="m">Medium</label>
+          </div>
+          <div class="smRadio">
+            <input type="radio" name="size" id="l" value="L" />
+            <label for="l">Large</label>
+
+            <input type="radio" name="size" id="xl" value="XL" />
+            <label for="xl">Extra Large</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="button1">Submit</button>
+          <button id="button2">Cancle</button>
+          <!-- <button id="button2" type="reset">Refresh</button> -->
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="form.js"></script>
+</html>

@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+#title {
+  text-align: center;
+  margin: 0;
+  padding: 25px 0;
+  background-color: rgb(4, 41, 70);
+  color: azure;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#tshirtForm {
+  margin-top: 60px;
+  padding: 20px;
+  /* text-align: center; */
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 220px;
+}
+#tshirtFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  display: block;
+  margin-top: 5px;
+  padding: 2px;
+  border-radius: 3px;
+}
+address {
+  display: block;
+  margin-top: 5px;
+}
+select {
+  display: block;
+  padding: 3px;
+  border-radius: 3px;
+  margin-right: 30px;
+  /* margin-top: 3px; */
+}
+.radioSize {
+  padding-bottom: 5px;
+}
+#sizeHeading {
+  margin: 0;
+  padding-top: 5px;
+}
+textarea {
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 2px;
+}
+input[type="radio"] {
+  display: inline;
+}
+.buttons {
+  display: flex;
+  height: 25px;
+}
+#button1 {
+  background-color: brown;
+  color: bisque;
+  flex-grow: 4;
+  border-radius: 3px;
+  height: 30px;
+}
+#button2 {
+  flex-grow: 1;
+  align-self: center;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+.addressContainer {
+  display: flex;
+  flex-direction: column;
+}
+#addtitle {
+  /* align-self: center; */
+}
+.smRadio {
+  display: flex;
+  /* justify-content: space-around; */
+}
